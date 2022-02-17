@@ -55,7 +55,6 @@ class MainActivity : AppCompatActivity() {
           resetBoard(view)
       }
     }
-
     private fun checkForVictory(s: String): Boolean {
         //Horizontal Victory
         if (match(binding.button1,s)&&match(binding.button2,s)&&(match(binding.button3,s)))
