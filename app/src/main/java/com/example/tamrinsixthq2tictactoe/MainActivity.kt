@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             result("player $CROSS winner")
             resetBoard(view)
         }
-      if(fullBoard()){
+      if(fullBoard()&&!checkForVictory(CROSS)&&!checkForVictory(NOUGHT)){
           result("Draw")
           resetBoard(view)
       }
